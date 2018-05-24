@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Testing Screenreader Detection Capabilities</title>
+  <link rel="manifest" href="manifest.json">
+  <!--  Styles  -->
+  <link rel="stylesheet" href="/c/default.css">
+</head>
+<body>
+  <h1>Testing Screenreader Detection Capabilities</h1>
+  
+  <noscript>
+    <p>This demo uses Windows’ JavaScript APIs and will not work without JavaScript support.</p>
+  </noscript>
+  
+  <!-- Scripts -->
+  <script src="/j/main.js"></script>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</body>
+</html>
